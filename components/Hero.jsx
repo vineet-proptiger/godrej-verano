@@ -69,23 +69,23 @@ const Hero = ({ setIsOpen }) => {
 
               {/* Heading & Brand Identity */}
               <div className="mb-3 sm:mb-4">
-                <div className="flex flex-wrap items-baseline gap-2.5 sm:gap-3.5 mb-1.5">
-                  <h1 className="text-white font-black tracking-tight leading-[1.08] text-[28px] xs:text-[32px] sm:text-[38px] md:text-[44px] m-0">
+                <div className="flex items-center gap-2 sm:gap-3.5 mb-1.5 flex-wrap sm:flex-nowrap">
+                  <h1 className="text-white font-black tracking-tight leading-tight text-[22px] min-[390px]:text-[26px] sm:text-[36px] md:text-[44px] m-0">
                     Godrej Verano
                   </h1>
-                  <span className="text-[10px] sm:text-[11px] uppercase tracking-[1.5px] font-semibold text-[#f2aeae] bg-[#C05656]/20 border border-[#C05656]/40 px-2.5 py-0.5 rounded-full self-center">
+                  <span className="text-[9.5px] sm:text-[11px] uppercase tracking-[1px] font-semibold text-[#f2aeae] bg-[#C05656]/20 border border-[#C05656]/40 px-2 sm:px-2.5 py-0.5 rounded-full whitespace-nowrap shrink-0">
                     By Godrej Properties
                   </span>
                 </div>
 
                 {/* Brand Tagline & Location Row */}
-                <div className="flex flex-wrap items-center gap-2 sm:gap-3.5 text-xs sm:text-[13.5px] text-white/75 mt-1.5">
-                  <span className="text-white/90 font-medium tracking-[2px] uppercase text-[11px] sm:text-xs">
+                <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 text-xs sm:text-[13.5px] text-white/75 mt-1 sm:mt-1.5">
+                  <span className="text-white/90 font-medium tracking-[1.5px] sm:tracking-[2px] uppercase text-[11px] sm:text-xs">
                     Miami-Inspired Bay Living
                   </span>
-                  <span className="text-white/30 hidden xs:inline">•</span>
-                  <span className="inline-flex items-center gap-1.5 text-white/80 font-medium">
-                    <i className="fas fa-location-dot text-[#C05656] text-[11px]" />
+                  <span className="text-white/30 hidden sm:inline">•</span>
+                  <span className="inline-flex items-start sm:items-center gap-1.5 text-white/80 font-medium">
+                    <i className="fas fa-location-dot text-[#C05656] text-[11px] mt-0.5 sm:mt-0 shrink-0" />
                     <span>Sector 63A, Golf Course Extension Road, Gurugram</span>
                   </span>
                 </div>
