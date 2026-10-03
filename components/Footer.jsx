@@ -10,8 +10,8 @@ const Footer = () => (
       {/* ── Heading ── */}
       <h2 
         data-aos="fade-up"
-        className="text-white font-bold text-[18px] sm:text-[26px] md:text-[34px] tracking-wider uppercase mb-2 leading-snug"
-        style={{ letterSpacing: '0.05em' }}
+        className="text-white font-bold text-[23px] sm:text-[29px] md:text-[35px] tracking-wider uppercase mb-2 leading-tight"
+        style={{ letterSpacing: '0.04em' }}
       >
         ABOUT THE DEVELOPER
       </h2>
