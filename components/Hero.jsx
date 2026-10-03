@@ -119,7 +119,7 @@ const Hero = ({ setIsOpen }) => {
               </div>
 
               {/* ── SIMPLE CLEAN BUTTONS (Below image) ── */}
-              <div className="grid grid-cols-4 gap-2 mt-3">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-3">
                 {heroSlides.map((slide, idx) => {
                   const isActive = activeSlide === idx
                   return (
@@ -130,38 +130,28 @@ const Hero = ({ setIsOpen }) => {
                         setIsTransitioning(true)
                         setCurrentIndex(idx + 1)
                       }}
-                      className={`py-2 px-1 rounded-lg text-xs sm:text-sm font-semibold transition-all cursor-pointer text-center border truncate ${
+                      className={`py-2 px-2 rounded-lg text-xs sm:text-sm font-semibold transition-all cursor-pointer text-center border truncate ${
                         isActive
                           ? 'bg-[#C05656] text-white border-[#C05656] shadow-md'
                           : 'bg-white/10 text-white/75 border-transparent hover:bg-white/20 hover:text-white'
                       }`}
                     >
-                      <span className="sm:hidden">{slide.shortName || slide.name}</span>
-                      <span className="hidden sm:inline">{slide.name}</span>
+                      <span className="truncate">{slide.name}</span>
                     </button>
                   )
                 })}
               </div>
 
-              {/* Miami-Inspired Bay Living Highlight (In place of 2nd SS) */}
-              <div className="mt-3.5 pt-3 border-t border-white/10 flex items-center justify-center">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.08] border border-white/15 backdrop-blur-sm shadow-xs">
-                  <span className="text-[#C05656] text-[10px]">✦</span>
-                  <span className="text-white font-extrabold tracking-[2px] uppercase text-[11px] sm:text-[12px]">
-                    Miami-Inspired Bay Living
-                  </span>
-                  <span className="text-[#C05656] text-[10px]">✦</span>
-                </div>
-              </div>
-
               {/* Project RERA Number Box */}
               <div className="mt-4">
-                <div className="inline-flex items-center bg-white/[0.06] border border-white/15 rounded-lg py-2.5 px-4 shadow-sm text-xs sm:text-[13.5px] backdrop-blur-sm transition-all hover:border-white/30">
-                  <i className="fas fa-shield-halved text-emerald-400 mr-2 text-[13px]" />
-                  <span className="text-white/70 mr-1.5 font-medium">
-                    RERA No :
-                  </span>
-                  <span className="text-white font-bold tracking-wider">
+                <div className="inline-flex flex-wrap items-center gap-x-2 gap-y-1 bg-white/[0.06] border border-white/15 rounded-lg py-2 px-3 sm:py-2.5 sm:px-4 shadow-sm backdrop-blur-sm max-w-full transition-all hover:border-white/30">
+                  <div className="inline-flex items-center gap-1.5 shrink-0">
+                    <i className="fas fa-shield-halved text-emerald-400 text-[12px] sm:text-[13px]" />
+                    <span className="text-white/70 font-medium text-xs sm:text-[13.5px] whitespace-nowrap">
+                      RERA No :
+                    </span>
+                  </div>
+                  <span className="text-white font-bold tracking-normal sm:tracking-wider text-[11px] sm:text-[13.5px] break-all">
                     {RERA_NO}
                   </span>
                 </div>
