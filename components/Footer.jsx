@@ -10,8 +10,8 @@ const Footer = () => (
       {/* ── Heading ── */}
       <h2 
         data-aos="fade-up"
-        className="text-white font-bold text-[28px] sm:text-[34px] md:text-[38px] tracking-[2.5px] uppercase mb-2"
-        style={{ letterSpacing: '0.08em' }}
+        className="text-white font-bold text-[18px] sm:text-[26px] md:text-[34px] tracking-wider uppercase mb-2 leading-snug"
+        style={{ letterSpacing: '0.05em' }}
       >
         ABOUT THE DEVELOPER
       </h2>
@@ -19,7 +19,7 @@ const Footer = () => (
       {/* ── Subheading / Tagline ── */}
       <p 
         data-aos="fade-up" data-aos-delay="50"
-        className="text-[#C05656] font-semibold text-[12px] sm:text-[13.5px] tracking-[2px] uppercase m-0"
+        className="text-[#C05656] font-semibold text-[11px] sm:text-[13px] tracking-wider uppercase m-0 px-2"
       >
         LANDMARK LUXURY RESIDENTIAL DEVELOPMENT — SECTOR 63A, GURUGRAM
       </p>
@@ -30,7 +30,7 @@ const Footer = () => (
       {/* ── Developer Description ── */}
       <p 
         data-aos="fade-up" data-aos-delay="100"
-        className="text-[#a1a1aa] text-[15px] sm:text-[16px] leading-[1.8] max-w-[920px] mb-10"
+        className="text-[#a1a1aa] text-[14px] sm:text-[16px] leading-[1.8] max-w-[920px] mb-8 sm:mb-10 px-2 sm:px-0"
       >
         Godrej Properties brings the Godrej Group philosophy of innovation, sustainability and excellence to the real estate industry. Each Godrej Properties development combines a 120–year legacy of excellence and trust with a commitment to cutting-edge design and technology.
       </p>
@@ -38,12 +38,12 @@ const Footer = () => (
       {/* ── RERA Number Box ── */}
       <div 
         data-aos="fade-up" data-aos-delay="150"
-        className="inline-flex flex-wrap items-center justify-center bg-white/[0.05] border border-white/15 rounded-[8px] py-3 px-6 sm:px-8 shadow-inner mb-6 transition-all hover:border-white/30"
+        className="inline-flex flex-wrap items-center justify-center bg-white/[0.05] border border-white/15 rounded-[8px] py-2.5 px-4 sm:px-8 shadow-inner mb-6 transition-all hover:border-white/30 max-w-full"
       >
-        <span className="text-neutral-400 text-[14px] sm:text-[15px] mr-2">
+        <span className="text-neutral-400 text-[12.5px] sm:text-[14.5px] mr-2 shrink-0">
           RERA No :
         </span>
-        <span className="text-white font-bold text-[14px] sm:text-[15.5px] tracking-wide">
+        <span className="text-white font-bold text-[12px] sm:text-[14.5px] tracking-normal sm:tracking-wide break-all">
           {RERA_NO}
         </span>
       </div>
