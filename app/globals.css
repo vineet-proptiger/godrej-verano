@@ -8,16 +8,19 @@
    THEME VARIABLES — Godrej Verano Sector 63A
    ═══════════════════════════════════════════════════════════════ */
 :root {
-  /* ── Accent Palette ── */
-  --color-gold: #b31c26;
-  --color-gold-light: #d93843;
-  --color-gold-dark: #8a1219;
-  --color-gold-bg: #fdf2f2;
+  /* ── Accent Palette (Godrej Verano) ── */
+  --color-gold: #C05656;
+  --color-gold-light: #d46b6b;
+  --color-gold-dark: #a84242;
+  --color-gold-bg: #f9ecec;
 
-  /* ── Primary (same as blue) ── */
-  --color-primary: #b31c26;
-  --color-primary-light: #d93843;
-  --color-primary-dark: #8a1219;
+  /* ── Primary & Teal ── */
+  --color-primary: #C05656;
+  --color-primary-light: #d46b6b;
+  --color-primary-dark: #a84242;
+  --color-teal: #174D4B;
+  --color-teal-light: #206361;
+  --color-teal-dark: #0f3534;
 
   /* ── Dark backgrounds ── */
   --color-dark: #212529;
@@ -226,17 +229,17 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #b31c26, #8a1219);
+    background: linear-gradient(180deg, #C05656, #174D4B);
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #003da5;
+    background: #174D4B;
   }
 
   ::selection {
-    background: rgba(179, 28, 38, 0.18);
-    color: #003da5;
+    background: rgba(192, 86, 86, 0.25);
+    color: #174D4B;
   }
 }
 
@@ -360,10 +363,10 @@
     font-weight: 700;
     font-family: var(--font-poppins), 'Poppins', sans-serif;
     letter-spacing: 2px;
-    box-shadow: -4px 0 20px rgba(179, 28, 38, 0.35);
-    background: #b31c26;
+    box-shadow: -4px 0 20px rgba(192, 86, 86, 0.35);
+    background: #C05656;
     color: #ffffff;
-    border: 2px solid #b31c26;
+    border: 2px solid #C05656;
     border-right: none;
     transition: all 0.3s ease;
     text-transform: uppercase;
@@ -373,9 +376,9 @@
   .btn-floating-tab:hover {
     transform: translateY(-50%) translateX(-3px) !important;
     background: #ffffff !important;
-    color: #b31c26 !important;
-    border-color: #b31c26;
-    box-shadow: -6px 0 25px rgba(179, 28, 38, 0.4);
+    color: #C05656 !important;
+    border-color: #C05656;
+    box-shadow: -6px 0 25px rgba(192, 86, 86, 0.45);
   }
 
   /* ══ SECTION TITLE ══ */
@@ -577,8 +580,8 @@
 }
 
 .lead-form-input:focus {
-  border-color: #b31c26;
-  box-shadow: 0 0 0 3px rgba(179, 28, 38, 0.12);
+  border-color: #C05656;
+  box-shadow: 0 0 0 3px rgba(192, 86, 86, 0.16);
 }
 
 .lead-form-input::placeholder {
@@ -589,9 +592,9 @@
 .lead-form-btn {
   width: 100%;
   padding: 14px 24px;
-  background: #b31c26;
+  background: #C05656;
   color: #ffffff;
-  border: 2px solid #b31c26;
+  border: 2px solid #C05656;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 700;
@@ -603,9 +606,9 @@
 
 .lead-form-btn:hover {
   background: #ffffff !important;
-  color: #b31c26 !important;
-  border-color: #b31c26;
-  box-shadow: 0 8px 25px rgba(179, 28, 38, 0.35);
+  color: #C05656 !important;
+  border-color: #C05656;
+  box-shadow: 0 8px 25px rgba(192, 86, 86, 0.35);
   transform: translateY(-1px);
 }
 

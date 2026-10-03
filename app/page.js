@@ -65,7 +65,7 @@ export default function Home() {
           id="mobile-call"
           href={`tel:${PHONE_NUMBER}`}
           className="flex-1 flex flex-col items-center justify-center py-2 px-1"
-          style={{ background: '#1a1a1a', borderRight: '1px solid #333' }}
+          style={{ background: '#174D4B', borderRight: '1px solid #0f3534' }}
         >
           <div className="phone-icon-wrap flex items-center justify-center">
             <svg width="20" height="20" fill="#ffffff" viewBox="0 0 24 24">
@@ -77,7 +77,7 @@ export default function Home() {
         <button
           onClick={() => setIsOpen(true)}
           className="flex-1 flex flex-col items-center justify-center py-2 px-1"
-          style={{ background: '#b31c26', borderRight: '1px solid #8a1219' }}
+          style={{ background: '#C05656', borderRight: '1px solid #a84242' }}
         >
           <div className="enquire-icon-wrap flex items-center justify-center">
             <svg width="22" height="22" fill="none" stroke="#ffffff" strokeWidth="2" viewBox="0 0 24 24">

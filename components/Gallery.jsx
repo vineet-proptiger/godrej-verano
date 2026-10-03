@@ -20,10 +20,10 @@ const Gallery = () => {
         
         {/* Section Title */}
         <div className="text-center mb-12">
-          <span className="block text-[#b31c26] font-bold text-[13px] uppercase tracking-[2.5px] mb-2">
+          <span className="block text-[#C05656] font-bold text-[13px] uppercase tracking-[2.5px] mb-2">
             PROJECT GALLERY
           </span>
-          <h2 className="text-[#111111] font-extrabold text-[26px] sm:text-[32px] md:text-[38px] tracking-tight">
+          <h2 className="text-[#174D4B] font-extrabold text-[26px] sm:text-[32px] md:text-[38px] tracking-tight">
             Project Gallery
           </h2>
         </div>
@@ -47,7 +47,7 @@ const Gallery = () => {
 
               {/* Hover Overlay */}
               <div className="gallery-overlay absolute inset-0 bg-[#222222]/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                <div className="w-14 h-14 rounded-full bg-white text-[#b31c26] flex items-center justify-center text-xl shadow-lg transform translate-y-6 group-hover:translate-y-0 transition-transform duration-300">
+                <div className="w-14 h-14 rounded-full bg-white text-[#C05656] flex items-center justify-center text-xl shadow-lg transform translate-y-6 group-hover:translate-y-0 transition-transform duration-300">
                   <i className="fa-solid fa-magnifying-glass-plus" />
                 </div>
               </div>
@@ -76,7 +76,7 @@ const Gallery = () => {
 
                 {/* Hover Overlay */}
                 <div className="gallery-overlay absolute inset-0 bg-[#222222]/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-white text-[#b31c26] flex items-center justify-center text-2xl shadow-lg transform translate-y-6 group-hover:translate-y-0 transition-transform duration-300">
+                  <div className="w-16 h-16 rounded-full bg-white text-[#C05656] flex items-center justify-center text-2xl shadow-lg transform translate-y-6 group-hover:translate-y-0 transition-transform duration-300">
                     <i className="fa-solid fa-magnifying-glass-plus" />
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const Gallery = () => {
           {/* Close Button */}
           <button
             onClick={() => setLightbox(null)}
-            className="absolute top-6 right-6 w-12 h-12 rounded-full bg-[#b31c26] hover:bg-[#0050d5] text-white text-2xl font-bold flex items-center justify-center transition-transform hover:scale-105 shadow-lg z-10"
+            className="absolute top-6 right-6 w-12 h-12 rounded-full bg-[#C05656] hover:bg-[#174D4B] text-white text-2xl font-bold flex items-center justify-center transition-transform hover:scale-105 shadow-lg z-10"
           >
             ×
           </button>

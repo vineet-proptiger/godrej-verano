@@ -30,8 +30,8 @@ const Overview = ({ setIsOpen }) => {
           {/* Content Column */}
           <div className="w-full lg:w-1/2 lg:px-[12px] lg:pl-16">
             <div className="section-heading">
-              <span className="text-[#b31c26] font-bold text-[14px] tracking-widest uppercase mb-3 block">
-                Miami-Inspired Bay Living
+              <span className="text-[#C05656] font-bold text-[14px] tracking-widest uppercase mb-3 block">
+                Bay Living Residences
               </span>
               <h2 className="text-[#111111] text-[25px] sm:text-[30px] md:text-[38px] font-extrabold leading-[1.2] mb-4">
                 Overview
@@ -48,7 +48,7 @@ const Overview = ({ setIsOpen }) => {
                 <button
                   type="button"
                   onClick={() => setIsExpanded(!isExpanded)}
-                  className="text-[#b31c26] font-semibold text-[14.5px] mt-2 hover:underline inline-flex items-center gap-1 cursor-pointer transition-colors duration-200 focus:outline-none"
+                  className="text-[#C05656] hover:text-[#174D4B] font-semibold text-[14.5px] mt-2 hover:underline inline-flex items-center gap-1 cursor-pointer transition-colors duration-200 focus:outline-none"
                 >
                   {isExpanded ? 'Read Less' : 'Read More'}
                   <svg 
@@ -65,42 +65,42 @@ const Overview = ({ setIsOpen }) => {
               <div className="grid grid-cols-2 gap-4 sm:gap-6 mt-6 mb-8">
                 {/* Feature 1 */}
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="mt-0.5 flex-shrink-0 text-[#b31c26]">
+                  <div className="mt-0.5 flex-shrink-0 text-[#C05656]">
                     <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
                   </div>
                   <div>
-                    <h5 className="text-[#222222] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Configuration</h5>
+                    <h5 className="text-[#174D4B] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Configuration</h5>
                     <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">3, 4 &amp; 5 BHK</p>
                   </div>
                 </div>
                 {/* Feature 2 */}
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="mt-0.5 flex-shrink-0 text-[#b31c26]">
+                  <div className="mt-0.5 flex-shrink-0 text-[#C05656]">
                     <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
                   </div>
                   <div>
-                    <h5 className="text-[#222222] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Land Parcel Area</h5>
+                    <h5 className="text-[#174D4B] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Land Parcel Area</h5>
                     <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">~11 Acres (Only 4 Towers)</p>
                   </div>
                 </div>
                 {/* Feature 3 (From User SS: Green Living) */}
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="mt-0.5 flex-shrink-0 text-[#b31c26]">
+                  <div className="mt-0.5 flex-shrink-0 text-[#C05656]">
                     <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
                   </div>
                   <div>
-                    <h5 className="text-[#222222] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Green Living</h5>
+                    <h5 className="text-[#174D4B] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Green Living</h5>
                     <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">8+ Acres Landscaped Greens</p>
                   </div>
                 </div>
-                {/* Feature 4 (From Brochure: Resort Clubhouse) */}
+                {/* Feature 4 (Miami-Inspired Bay Living) */}
                 <div className="flex items-start gap-2 sm:gap-3">
-                  <div className="mt-0.5 flex-shrink-0 text-[#b31c26]">
+                  <div className="mt-0.5 flex-shrink-0 text-[#C05656]">
                     <i className="fa-solid fa-circle-check text-[18px] sm:text-[22px]"></i>
                   </div>
                   <div>
-                    <h5 className="text-[#222222] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Resort Clubhouse</h5>
-                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">World-Class Amenities</p>
+                    <h5 className="text-[#174D4B] font-bold text-[13.5px] sm:text-[16px] mb-1 leading-snug">Miami-Inspired</h5>
+                    <p className="text-[#6c757d] text-[12px] sm:text-[14px] m-0 leading-normal">Bay Living Residences</p>
                   </div>
                 </div>
               </div>

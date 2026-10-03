@@ -14,10 +14,22 @@ module.exports = {
           dark: 'var(--color-gold-dark)',  /* #332f54 */
           bg: 'var(--color-gold-bg)',    /* #eeedf4 */
         },
+        teal: {
+          DEFAULT: '#174D4B',
+          light: '#236764',
+          dark: '#0f3534',
+          bg: '#EBF2F1',
+        },
+        terracotta: {
+          DEFAULT: '#C05656',
+          light: '#d46b6b',
+          dark: '#a84242',
+          bg: '#FBF2F2',
+        },
         primary: {
-          DEFAULT: 'var(--color-primary)',
-          light: 'var(--color-primary-light)',
-          dark: 'var(--color-primary-dark)',
+          DEFAULT: '#C05656',
+          light: '#d46b6b',
+          dark: '#a84242',
         },
         dark: {
           DEFAULT: 'var(--color-dark)',

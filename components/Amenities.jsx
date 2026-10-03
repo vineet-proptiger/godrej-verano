@@ -51,10 +51,10 @@ const Amenities = () => {
 
         {/* Section Title */}
         <div className="text-center mb-14" data-aos="fade-up">
-          <span className="text-[#b31c26] font-bold text-[14px] tracking-[2px] uppercase mb-3 block">
+          <span className="text-[#C05656] font-bold text-[14px] tracking-[2px] uppercase mb-3 block">
             WORLD CLASS AMENITIES
           </span>
-          <h2 className="text-[#111111] text-[26px] sm:text-[32px] md:text-[38px] font-bold m-0">
+          <h2 className="text-[#174D4B] text-[26px] sm:text-[32px] md:text-[38px] font-bold m-0">
             A Lifestyle Beyond Ordinary
           </h2>
         </div>
@@ -66,15 +66,15 @@ const Amenities = () => {
               key={index}
               data-aos="fade-up"
               data-aos-delay={((index % 4) * 50).toString()}
-              className="group bg-white rounded-[20px] p-8 text-center border border-[#fbe6e7] shadow-[0_6px_25px_rgba(0,0,0,0.03)] hover:-translate-y-2.5 hover:shadow-[0_15px_35px_rgba(179, 28, 38,0.12)] transition-all duration-300 cursor-pointer flex flex-col items-center justify-center"
+              className="group bg-white rounded-[20px] p-8 text-center border border-[#F7E8E8] shadow-[0_6px_25px_rgba(0,0,0,0.03)] hover:-translate-y-2.5 hover:shadow-[0_15px_35px_rgba(192,86,86,0.14)] transition-all duration-300 cursor-pointer flex flex-col items-center justify-center"
             >
               {/* Icon in Circular Badge */}
-              <div className="w-[76px] h-[76px] rounded-full bg-[#fbe6e7] text-[#b31c26] group-hover:bg-[#b31c26] group-hover:text-white flex items-center justify-center text-[28px] mb-6 transition-all duration-300 group-hover:scale-110 shadow-[0_4px_10px_rgba(179, 28, 38,0.1)] group-hover:shadow-[0_6px_20px_rgba(179, 28, 38,0.3)]">
+              <div className="w-[76px] h-[76px] rounded-full bg-[#FBF2F2] text-[#C05656] group-hover:bg-[#C05656] group-hover:text-white flex items-center justify-center text-[28px] mb-6 transition-all duration-300 group-hover:scale-110 shadow-[0_4px_10px_rgba(192,86,86,0.1)] group-hover:shadow-[0_6px_20px_rgba(192,86,86,0.3)]">
                 <i className={item.icon}></i>
               </div>
 
               {/* Title */}
-              <h4 className="text-[#222222] font-extrabold text-[19px] mb-2.5 tracking-tight group-hover:text-[#b31c26] transition-colors duration-200">
+              <h4 className="text-[#174D4B] font-extrabold text-[19px] mb-2.5 tracking-tight group-hover:text-[#C05656] transition-colors duration-200">
                 {item.title}
               </h4>
 

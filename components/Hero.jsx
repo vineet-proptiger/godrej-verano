@@ -49,7 +49,7 @@ const Hero = ({ setIsOpen }) => {
   return (
     <section
       id="home"
-      className="hero-section relative bg-gradient-to-br from-[#1e293b] via-[#0f172a] to-[#020617] text-white overflow-hidden"
+      className="hero-section relative bg-gradient-to-br from-[#0e2726] via-[#091a19] to-[#040c0c] text-white overflow-hidden"
       style={{
         fontFamily: 'var(--font-poppins), Poppins, sans-serif',
       }}
@@ -57,7 +57,7 @@ const Hero = ({ setIsOpen }) => {
       <div className="w-full pt-[82px] pb-8 sm:pt-[88px] sm:pb-10 lg:pt-[98px] lg:pb-12 relative z-10">
 
         {/* Ambient subtle glow in background (static) */}
-        <div className="absolute top-0 right-1/4 w-72 sm:w-[450px] h-72 sm:h-[450px] bg-[#b31c26]/15 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute top-0 right-1/4 w-72 sm:w-[450px] h-72 sm:h-[450px] bg-[#C05656]/15 rounded-full blur-[100px] pointer-events-none" />
 
         <div className="container mx-auto px-3.5 sm:px-6" style={{ maxWidth: '1380px' }}>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-10 items-start">
@@ -73,7 +73,7 @@ const Hero = ({ setIsOpen }) => {
                   <h1 className="text-white font-black tracking-tight leading-[1.08] text-[28px] xs:text-[32px] sm:text-[38px] md:text-[44px] m-0">
                     Godrej Verano
                   </h1>
-                  <span className="text-[10px] sm:text-[11px] uppercase tracking-[1.5px] font-semibold text-[#ff808a] bg-[#b31c26]/20 border border-[#ff4d5a]/30 px-2.5 py-0.5 rounded-full self-center">
+                  <span className="text-[10px] sm:text-[11px] uppercase tracking-[1.5px] font-semibold text-[#f2aeae] bg-[#C05656]/20 border border-[#C05656]/40 px-2.5 py-0.5 rounded-full self-center">
                     By Godrej Properties
                   </span>
                 </div>
@@ -85,7 +85,7 @@ const Hero = ({ setIsOpen }) => {
                   </span>
                   <span className="text-white/30 hidden xs:inline">•</span>
                   <span className="inline-flex items-center gap-1.5 text-white/80 font-medium">
-                    <i className="fas fa-location-dot text-[#ff4d5a] text-[11px]" />
+                    <i className="fas fa-location-dot text-[#C05656] text-[11px]" />
                     <span>Sector 63A, Golf Course Extension Road, Gurugram</span>
                   </span>
                 </div>
@@ -132,7 +132,7 @@ const Hero = ({ setIsOpen }) => {
                       }}
                       className={`py-2 px-1 rounded-lg text-xs sm:text-sm font-semibold transition-all cursor-pointer text-center border truncate ${
                         isActive
-                          ? 'bg-[#b31c26] text-white border-[#b31c26] shadow-md'
+                          ? 'bg-[#C05656] text-white border-[#C05656] shadow-md'
                           : 'bg-white/10 text-white/75 border-transparent hover:bg-white/20 hover:text-white'
                       }`}
                     >
@@ -146,11 +146,11 @@ const Hero = ({ setIsOpen }) => {
               {/* Miami-Inspired Bay Living Highlight (In place of 2nd SS) */}
               <div className="mt-3.5 pt-3 border-t border-white/10 flex items-center justify-center">
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/[0.08] border border-white/15 backdrop-blur-sm shadow-xs">
-                  <span className="text-[#ff808a] text-[10px]">✦</span>
+                  <span className="text-[#C05656] text-[10px]">✦</span>
                   <span className="text-white font-extrabold tracking-[2px] uppercase text-[11px] sm:text-[12px]">
                     Miami-Inspired Bay Living
                   </span>
-                  <span className="text-[#ff808a] text-[10px]">✦</span>
+                  <span className="text-[#C05656] text-[10px]">✦</span>
                 </div>
               </div>
 
@@ -180,8 +180,8 @@ const Hero = ({ setIsOpen }) => {
                   <span className="text-white/60 text-[9.5px] sm:text-[10.5px] uppercase block mb-0.5">Price</span>
                   <div className="flex items-center gap-1.5">
                     <span className="relative flex h-2 w-2">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff4d5a] opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#ff4d5a]"></span>
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C05656] opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C05656]"></span>
                     </span>
                     <strong className="blink-price font-black text-[14.5px] sm:text-[19px] whitespace-nowrap tracking-tight">
                       ₹ 5.91 Cr* Onwards
@@ -201,12 +201,12 @@ const Hero = ({ setIsOpen }) => {
               <div
                 className="rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 relative overflow-hidden"
                 style={{
-                  background: 'rgba(15, 23, 42, 0.92)',
+                  background: 'rgba(11, 28, 27, 0.94)',
                   backdropFilter: 'blur(28px)',
                   WebkitBackdropFilter: 'blur(28px)',
                   border: '1px solid rgba(255, 255, 255, 0.16)',
                   boxShadow: '0 20px 60px rgba(0, 0, 0, 0.65)',
-                  borderTop: '4px solid #b31c26',
+                  borderTop: '4px solid #C05656',
                 }}
               >
                 {/* Header */}

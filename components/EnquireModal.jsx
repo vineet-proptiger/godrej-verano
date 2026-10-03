@@ -17,7 +17,7 @@ const fieldStyle = {
   fontSize: '14.5px',
   fontFamily: 'var(--font-poppins), Poppins, sans-serif',
   outline: 'none',
-  caretColor: '#b31c26',
+  caretColor: '#C05656',
 }
 
 const EnquireModal = ({ isOpen, setIsOpen }) => {
@@ -136,7 +136,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
             lineHeight: 1, borderRadius: '50%',
             transition: 'background 0.2s, color 0.2s',
           }}
-          onMouseEnter={e => { e.currentTarget.style.background = '#b31c26'; e.currentTarget.style.color = '#fff' }}
+          onMouseEnter={e => { e.currentTarget.style.background = '#C05656'; e.currentTarget.style.color = '#fff' }}
           onMouseLeave={e => { e.currentTarget.style.background = '#f3f4f6'; e.currentTarget.style.color = '#4b5563' }}
           aria-label="Close"
         >
@@ -157,11 +157,11 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
           <div style={{ textAlign: 'center', padding: '28px 0' }}>
             <div style={{
               width: '64px', height: '64px', borderRadius: '50%',
-              background: 'rgba(179, 28, 38, 0.1)', border: '2px solid #b31c26',
+              background: 'rgba(192, 86, 86, 0.1)', border: '2px solid #C05656',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               margin: '0 auto 16px',
             }}>
-              <svg width="32" height="32" fill="none" stroke="#b31c26" strokeWidth="2.5" viewBox="0 0 24 24">
+              <svg width="32" height="32" fill="none" stroke="#C05656" strokeWidth="2.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </div>
@@ -181,7 +181,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                 name="fullname" required value={form.fullname} onChange={handle}
                 placeholder="Enter your name"
                 style={fieldStyle}
-                onFocus={e => { e.currentTarget.style.borderColor = '#b31c26'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(179, 28, 38, 0.15)' }}
+                onFocus={e => { e.currentTarget.style.borderColor = '#C05656'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(192, 86, 86, 0.15)' }}
                 onBlur={e => { e.currentTarget.style.borderColor = '#d1d5db'; e.currentTarget.style.boxShadow = 'none' }}
               />
             </div>
@@ -192,7 +192,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                 name="email" type="email" value={form.email} onChange={handle}
                 placeholder="Enter your email (Optional)"
                 style={fieldStyle}
-                onFocus={e => { e.currentTarget.style.borderColor = '#b31c26'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(179, 28, 38, 0.15)' }}
+                onFocus={e => { e.currentTarget.style.borderColor = '#C05656'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(192, 86, 86, 0.15)' }}
                 onBlur={e => { e.currentTarget.style.borderColor = '#d1d5db'; e.currentTarget.style.boxShadow = 'none' }}
               />
             </div>
@@ -203,7 +203,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
                 name="phone" required value={form.phone} onChange={handle}
                 placeholder="Enter your phone number" maxLength={10}
                 style={fieldStyle}
-                onFocus={e => { e.currentTarget.style.borderColor = '#b31c26'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(179, 28, 38, 0.15)' }}
+                onFocus={e => { e.currentTarget.style.borderColor = '#C05656'; e.currentTarget.style.boxShadow = '0 0 0 3px rgba(192, 86, 86, 0.15)' }}
                 onBlur={e => { e.currentTarget.style.borderColor = '#d1d5db'; e.currentTarget.style.boxShadow = 'none' }}
               />
             </div>
@@ -221,11 +221,11 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '22px' }}>
               <input
                 type="checkbox" id="popup-privacy" required defaultChecked
-                style={{ accentColor: '#b31c26', marginTop: '3px', flexShrink: 0, width: '16px', height: '16px' }}
+                style={{ accentColor: '#C05656', marginTop: '3px', flexShrink: 0, width: '16px', height: '16px' }}
               />
               <label htmlFor="popup-privacy" style={{ fontSize: '12px', color: '#6b7280', lineHeight: 1.5, cursor: 'pointer' }}>
                 I agree to receive updates as per the{' '}
-                <Link href="/privacy-policy" style={{ color: '#b31c26', fontWeight: '600', textDecoration: 'underline' }}>Privacy Policy</Link>.
+                <Link href="/privacy-policy" style={{ color: '#C05656', fontWeight: '600', textDecoration: 'underline' }}>Privacy Policy</Link>.
               </label>
             </div>
 
@@ -235,16 +235,16 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
               <button
                 type="submit" disabled={loading}
                 style={{
-                  background: '#b31c26', color: '#fff', border: '2px solid #b31c26',
+                  background: '#C05656', color: '#fff', border: '2px solid #C05656',
                   padding: '14px 48px', fontFamily: 'var(--font-poppins), Poppins, sans-serif', fontWeight: '700',
                   fontSize: '15px', letterSpacing: '0.05em', cursor: loading ? 'not-allowed' : 'pointer',
                   textTransform: 'uppercase', borderRadius: '8px',
                   opacity: loading ? 0.75 : 1, width: '100%',
                   transition: 'all 0.3s ease',
-                  boxShadow: '0 4px 15px rgba(179, 28, 38, 0.35)',
+                  boxShadow: '0 4px 15px rgba(192, 86, 86, 0.35)',
                 }}
-                onMouseEnter={e => { if (!loading) { e.currentTarget.style.background = '#ffffff'; e.currentTarget.style.color = '#b31c26' } }}
-                onMouseLeave={e => { if (!loading) { e.currentTarget.style.background = '#b31c26'; e.currentTarget.style.color = '#fff' } }}
+                onMouseEnter={e => { if (!loading) { e.currentTarget.style.background = '#ffffff'; e.currentTarget.style.color = '#C05656' } }}
+                onMouseLeave={e => { if (!loading) { e.currentTarget.style.background = '#C05656'; e.currentTarget.style.color = '#fff' } }}
               >
                 {loading ? 'SENDING...' : 'SUBMIT'}
               </button>

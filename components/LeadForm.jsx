@@ -111,7 +111,7 @@ const LeadForm = ({ formName = 'Hero Form', btnText = 'Submit Now' }) => {
           required
           defaultChecked
           className="mt-1 shrink-0 cursor-pointer"
-          style={{ accentColor: '#b31c26', width: '16px', height: '16px' }}
+          style={{ accentColor: '#C05656', width: '16px', height: '16px' }}
         />
         <label
           htmlFor="consentCheck"
