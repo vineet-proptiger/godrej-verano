@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import LeadForm from './LeadForm'
 import { heroSlides } from '../lib/images'
-import { RERA_NO, PHONE_NUMBER } from '../lib/config'
+import { PHONE_NUMBER } from '../lib/config'
 
 // Slides extended with clones at both ends for seamless infinite circular loop
 const extendedSlides = [
@@ -142,18 +142,36 @@ const Hero = ({ setIsOpen }) => {
                 })}
               </div>
 
-              {/* Project RERA Number Box */}
-              <div className="mt-4">
-                <div className="inline-flex flex-wrap items-center gap-x-2 gap-y-1 bg-white/[0.06] border border-white/15 rounded-lg py-2 px-3 sm:py-2.5 sm:px-4 shadow-sm backdrop-blur-sm max-w-full transition-all hover:border-white/30">
-                  <div className="inline-flex items-center gap-1.5 shrink-0">
-                    <i className="fas fa-shield-halved text-emerald-400 text-[12px] sm:text-[13px]" />
-                    <span className="text-white/70 font-medium text-xs sm:text-[13.5px] whitespace-nowrap">
-                      RERA No :
+              {/* Highlights Strip: 20:5 Payment Plan & ₹10 Lakh EOI Now Open Buttons with Check Circle */}
+              <div className="mt-3.5 sm:mt-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
+                  {/* Left: 20:5 Payment Plan */}
+                  <button
+                    type="button"
+                    onClick={() => setIsOpen && setIsOpen(true)}
+                    className="flex items-center justify-center gap-2 bg-white/[0.08] hover:bg-white/[0.14] active:scale-[0.98] border border-white/20 hover:border-emerald-400/50 rounded-lg sm:rounded-xl py-2.5 px-3 shadow-md backdrop-blur-md transition-all text-center cursor-pointer group w-full"
+                  >
+                    <svg className="w-4 h-4 text-emerald-400 shrink-0 group-hover:scale-110 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-white font-bold text-xs sm:text-[13.5px] tracking-tight whitespace-nowrap">
+                      20:5 Payment Plan
                     </span>
-                  </div>
-                  <span className="text-white font-bold tracking-normal sm:tracking-wider text-[11px] sm:text-[13.5px] break-all">
-                    {RERA_NO}
-                  </span>
+                  </button>
+
+                  {/* Right: ₹10 Lakh EOI Now Open */}
+                  <button
+                    type="button"
+                    onClick={() => setIsOpen && setIsOpen(true)}
+                    className="flex items-center justify-center gap-2 bg-white/[0.08] hover:bg-white/[0.14] active:scale-[0.98] border border-white/20 hover:border-emerald-400/50 rounded-lg sm:rounded-xl py-2.5 px-3 shadow-md backdrop-blur-md transition-all text-center cursor-pointer group w-full"
+                  >
+                    <svg className="w-4 h-4 text-emerald-400 shrink-0 group-hover:scale-110 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-white font-bold text-xs sm:text-[13.5px] tracking-tight whitespace-nowrap">
+                      ₹10 Lakh EOI Now Open
+                    </span>
+                  </button>
                 </div>
               </div>
 
@@ -210,7 +228,7 @@ const Hero = ({ setIsOpen }) => {
                 </div>
 
                 {/* LeadForm */}
-                <LeadForm formName="Godrej Verano Hero Form" btnText="Get Cost Sheet on WhatsApp" />
+                <LeadForm formName="Godrej Verano Hero Form" btnText="Submit" />
 
                 {/* Instant Actions (Call & Visit on Mobile) */}
                 <div className="mt-3.5 pt-3.5 border-t border-white/10 flex items-center justify-between text-[11.5px] sm:text-xs text-white/80">

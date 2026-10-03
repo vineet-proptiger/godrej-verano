@@ -23,7 +23,7 @@ const highlights = [
     icon: 'fa-solid fa-hotel'
   },
   {
-    title: '35+ World-Class Amenities',
+    title: '50+ World-Class Amenities',
     description: 'Curated wellness, sports, children play zones, and lifestyle amenities for every age group.',
     icon: 'fa-solid fa-shapes'
   },
